@@ -21,14 +21,13 @@
     self.spinnyThing.fillOnTouch = NO;
     self.spinnyThing.borderWidth = 0.0;
     self.spinnyThing.tintColor = [UIColor colorWithRed:0.82 green:0.11 blue:0.31 alpha:1.0];
-    NSNumber *percentCharged = [NSNumber numberWithInt:68];
     
-    CGFloat test = 0.68;
+//    CGFloat test = 0.68;
+//    
+//    [self.spinnyThing setProgress:test animated:YES];
     
-    [self.spinnyThing setProgress:test animated:YES];
-    
-    NSString *timeText = [NSString stringWithFormat:@"%@%%", [percentCharged stringValue]];
-    self.percentageMarker.text = timeText;
+//    NSString *timeText = [NSString stringWithFormat:@"%@%%", [percentCharged stringValue]];
+//    self.percentageMarker.text = timeText;
     
     //outerRing
     
@@ -37,9 +36,9 @@
     self.outerRing.borderWidth = 0.0;
     self.outerRing.tintColor = [UIColor colorWithRed:0.22 green:0.06 blue:0.25 alpha:1.0];
     
-    CGFloat testOuter = 0.70;
-    
-    [self.outerRing setProgress:testOuter animated:YES];
+//    CGFloat testOuter = 0.70;
+//    
+//    [self.outerRing setProgress:testOuter animated:YES];
     
     // Do any additional setup after loading the view, typically from a nib.
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -49,6 +48,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(batteryStateChanged:)
                                                  name:UIDeviceBatteryStateDidChangeNotification object:nil];
+    
+    [UIDevice currentDevice].batteryMonitoringEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,6 +62,11 @@
 - (void)updateBatteryLevel
 {
     float batteryLevel = [UIDevice currentDevice].batteryLevel;
+    [self.outerRing setProgress:batteryLevel animated:YES];
+    [self.spinnyThing setProgress:batteryLevel animated:YES];
+    int rounded = ((batteryLevel * 100) + 0.5);
+    NSNumber *percentCharged = [NSNumber numberWithInt:rounded];
+    self.centerPercent.text = [NSString stringWithFormat:@"%@%%", [percentCharged stringValue]];
     NSLog(@"Battery Level %f", batteryLevel);
     if (batteryLevel < 0.0) {
         // -1.0 means battery state is UIDeviceBatteryStateUnknown
