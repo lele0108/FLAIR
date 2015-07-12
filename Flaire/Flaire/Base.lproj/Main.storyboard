@@ -50,7 +50,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ws5-8c-S8r" customClass="UAProgressView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="176" width="248" height="248"/>
+                                    <rect key="frame" x="77" y="177" width="246" height="246"/>
                                 </variation>
                             </view>
                         </subviews>
