@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *percentageMarker;
 @property (strong, nonatomic) IBOutlet UAProgressView *outerRing;
 @property (weak, nonatomic) IBOutlet UILabel *centerPercent;
+@property (weak, nonatomic) IBOutlet UAProgressView *outsideHalo;
 
 
 @end

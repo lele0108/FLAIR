@@ -47,24 +47,33 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ws5-8c-S8r" customClass="UAProgressView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="76" y="176" width="248" height="248"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="J04-Oj-X4K"/>
                                 <exclude reference="nrn-lz-w4Q"/>
+                                <exclude reference="ws5-8c-S8r"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="J04-Oj-X4K"/>
                                 <include reference="nrn-lz-w4Q"/>
+                                <include reference="ws5-8c-S8r"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="centerPercent" destination="6R9-9s-HZ8" id="o5D-74-Gzr"/>
                         <outlet property="outerRing" destination="J04-Oj-X4K" id="DLU-SC-lgx"/>
+                        <outlet property="outsideHalo" destination="ws5-8c-S8r" id="fl2-73-xq5"/>
                         <outlet property="spinnyThing" destination="nrn-lz-w4Q" id="AQm-TF-Tum"/>
                     </connections>
                 </viewController>

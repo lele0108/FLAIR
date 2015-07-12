@@ -36,6 +36,13 @@
     self.outerRing.borderWidth = 0.0;
     self.outerRing.tintColor = [UIColor colorWithRed:0.22 green:0.06 blue:0.25 alpha:1.0];
     
+    self.outsideHalo.lineWidth = 30.0;
+    self.outsideHalo.fillOnTouch = NO;
+    self.outsideHalo.borderWidth = 0.0;
+    self.outsideHalo.tintColor = [UIColor colorWithRed:0.88 green:0.88 blue:0.85 alpha:0.3];
+    
+    [self.outsideHalo setProgress:1.0 animated:YES];
+    
 //    CGFloat testOuter = 0.70;
 //    
 //    [self.outerRing setProgress:testOuter animated:YES];
@@ -63,7 +70,7 @@
 {
     float batteryLevel = [UIDevice currentDevice].batteryLevel;
     [self.outerRing setProgress:batteryLevel animated:YES];
-    [self.spinnyThing setProgress:batteryLevel animated:YES];
+    [self.spinnyThing setProgress:batteryLevel - 0.50 animated:YES];
     int rounded = ((batteryLevel * 100) + 0.5);
     NSNumber *percentCharged = [NSNumber numberWithInt:rounded];
     self.centerPercent.text = [NSString stringWithFormat:@"%@%%", [percentCharged stringValue]];
