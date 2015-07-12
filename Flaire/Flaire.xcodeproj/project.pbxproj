@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59FA9C355FAE1CC917D780A3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6175B9B241C73464132F6 /* libPods.a */; };
 		8702EC411B51CFDE003B94EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC401B51CFDE003B94EA /* main.m */; };
 		8702EC441B51CFDE003B94EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC431B51CFDE003B94EA /* AppDelegate.m */; };
 		8702EC471B51CFDE003B94EA /* Flaire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC451B51CFDE003B94EA /* Flaire.xcdatamodeld */; };
@@ -42,6 +43,9 @@
 		8702EC571B51CFDE003B94EA /* FlaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8702EC5C1B51CFDE003B94EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8702EC5D1B51CFDE003B94EA /* FlaireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaireTests.m; sourceTree = "<group>"; };
+		A9C6175B9B241C73464132F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA24F7C8DB1278A38428D718 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ED6B9508ACBB97FD72A746CD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FA9C355FAE1CC917D780A3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2113D87C504FC631B5E626C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED6B9508ACBB97FD72A746CD /* Pods.debug.xcconfig */,
+				EA24F7C8DB1278A38428D718 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BF5035FEE4349505397CC09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6175B9B241C73464132F6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8702EC321B51CFDE003B94EA = {
 			isa = PBXGroup;
 			children = (
 				8702EC3D1B51CFDE003B94EA /* Flaire */,
 				8702EC5A1B51CFDE003B94EA /* FlaireTests */,
 				8702EC3C1B51CFDE003B94EA /* Products */,
+				2113D87C504FC631B5E626C3 /* Pods */,
+				4BF5035FEE4349505397CC09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8702EC611B51CFDE003B94EA /* Build configuration list for PBXNativeTarget "Flaire" */;
 			buildPhases = (
+				82FF7D2D6A30A8C890E3F78A /* Check Pods Manifest.lock */,
 				8702EC371B51CFDE003B94EA /* Sources */,
 				8702EC381B51CFDE003B94EA /* Frameworks */,
 				8702EC391B51CFDE003B94EA /* Resources */,
+				70692FA95CDAEF90870715C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70692FA95CDAEF90870715C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82FF7D2D6A30A8C890E3F78A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8702EC371B51CFDE003B94EA /* Sources */ = {
@@ -349,6 +408,7 @@
 		};
 		8702EC621B51CFDE003B94EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED6B9508ACBB97FD72A746CD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flaire/Info.plist;
@@ -360,6 +420,7 @@
 		};
 		8702EC631B51CFDE003B94EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA24F7C8DB1278A38428D718 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Flaire/Info.plist;

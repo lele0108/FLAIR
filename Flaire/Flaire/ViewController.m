@@ -16,6 +16,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.spinnyThing.lineWidth = 25.0;
+    self.spinnyThing.fillOnTouch = NO;
+    self.spinnyThing.borderWidth = 0.0;
+    self.spinnyThing.tintColor = [UIColor colorWithRed:0.82 green:0.11 blue:0.31 alpha:1.0];
+    NSNumber *percentCharged = [NSNumber numberWithInt:68];
+    
+    CGFloat test = 0.68;
+    
+    [self.spinnyThing setProgress:test animated:YES];
+    
+    NSString *timeText = [NSString stringWithFormat:@"%@%%", [percentCharged stringValue]];
+    self.percentageMarker.text = timeText;
+    
+    //outerRing
+    
+    self.outerRing.lineWidth = 25.0;
+    self.outerRing.fillOnTouch = NO;
+    self.outerRing.borderWidth = 0.0;
+    self.outerRing.tintColor = [UIColor colorWithRed:0.22 green:0.06 blue:0.25 alpha:1.0];
+    
+    CGFloat testOuter = 0.70;
+    
+    [self.outerRing setProgress:testOuter animated:YES];
+    
     // Do any additional setup after loading the view, typically from a nib.
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(batteryLevelChanged:)

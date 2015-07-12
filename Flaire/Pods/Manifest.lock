@@ -1,0 +1,10 @@
+PODS:
+  - UAProgressView (0.1.1)
+
+DEPENDENCIES:
+  - UAProgressView
+
+SPEC CHECKSUMS:
+  UAProgressView: 9518e321a5d4173f66c225717db873322ec1f070
+
+COCOAPODS: 0.37.2

@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UAProgressView.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UAProgressView *spinnyThing;
+@property (strong, nonatomic) IBOutlet UILabel *percentageMarker;
+@property (strong, nonatomic) IBOutlet UAProgressView *outerRing;
 
 
 @end
