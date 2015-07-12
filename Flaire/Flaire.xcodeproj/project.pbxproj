@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8702EC411B51CFDE003B94EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC401B51CFDE003B94EA /* main.m */; };
+		8702EC441B51CFDE003B94EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC431B51CFDE003B94EA /* AppDelegate.m */; };
+		8702EC471B51CFDE003B94EA /* Flaire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC451B51CFDE003B94EA /* Flaire.xcdatamodeld */; };
+		8702EC4A1B51CFDE003B94EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC491B51CFDE003B94EA /* ViewController.m */; };
+		8702EC4D1B51CFDE003B94EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8702EC4B1B51CFDE003B94EA /* Main.storyboard */; };
+		8702EC4F1B51CFDE003B94EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8702EC4E1B51CFDE003B94EA /* Images.xcassets */; };
+		8702EC521B51CFDE003B94EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8702EC501B51CFDE003B94EA /* LaunchScreen.xib */; };
+		8702EC5E1B51CFDE003B94EA /* FlaireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8702EC5D1B51CFDE003B94EA /* FlaireTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8702EC581B51CFDE003B94EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8702EC331B51CFDE003B94EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8702EC3A1B51CFDE003B94EA;
+			remoteInfo = Flaire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8702EC3B1B51CFDE003B94EA /* Flaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8702EC3F1B51CFDE003B94EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8702EC401B51CFDE003B94EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8702EC421B51CFDE003B94EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8702EC431B51CFDE003B94EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8702EC461B51CFDE003B94EA /* Flaire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flaire.xcdatamodel; sourceTree = "<group>"; };
+		8702EC481B51CFDE003B94EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8702EC491B51CFDE003B94EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8702EC4C1B51CFDE003B94EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8702EC4E1B51CFDE003B94EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8702EC511B51CFDE003B94EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8702EC571B51CFDE003B94EA /* FlaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8702EC5C1B51CFDE003B94EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8702EC5D1B51CFDE003B94EA /* FlaireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaireTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8702EC381B51CFDE003B94EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8702EC541B51CFDE003B94EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8702EC321B51CFDE003B94EA = {
+			isa = PBXGroup;
+			children = (
+				8702EC3D1B51CFDE003B94EA /* Flaire */,
+				8702EC5A1B51CFDE003B94EA /* FlaireTests */,
+				8702EC3C1B51CFDE003B94EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8702EC3C1B51CFDE003B94EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8702EC3B1B51CFDE003B94EA /* Flaire.app */,
+				8702EC571B51CFDE003B94EA /* FlaireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8702EC3D1B51CFDE003B94EA /* Flaire */ = {
+			isa = PBXGroup;
+			children = (
+				8702EC421B51CFDE003B94EA /* AppDelegate.h */,
+				8702EC431B51CFDE003B94EA /* AppDelegate.m */,
+				8702EC481B51CFDE003B94EA /* ViewController.h */,
+				8702EC491B51CFDE003B94EA /* ViewController.m */,
+				8702EC4B1B51CFDE003B94EA /* Main.storyboard */,
+				8702EC4E1B51CFDE003B94EA /* Images.xcassets */,
+				8702EC501B51CFDE003B94EA /* LaunchScreen.xib */,
+				8702EC451B51CFDE003B94EA /* Flaire.xcdatamodeld */,
+				8702EC3E1B51CFDE003B94EA /* Supporting Files */,
+			);
+			path = Flaire;
+			sourceTree = "<group>";
+		};
+		8702EC3E1B51CFDE003B94EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8702EC3F1B51CFDE003B94EA /* Info.plist */,
+				8702EC401B51CFDE003B94EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8702EC5A1B51CFDE003B94EA /* FlaireTests */ = {
+			isa = PBXGroup;
+			children = (
+				8702EC5D1B51CFDE003B94EA /* FlaireTests.m */,
+				8702EC5B1B51CFDE003B94EA /* Supporting Files */,
+			);
+			path = FlaireTests;
+			sourceTree = "<group>";
+		};
+		8702EC5B1B51CFDE003B94EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8702EC5C1B51CFDE003B94EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8702EC3A1B51CFDE003B94EA /* Flaire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8702EC611B51CFDE003B94EA /* Build configuration list for PBXNativeTarget "Flaire" */;
+			buildPhases = (
+				8702EC371B51CFDE003B94EA /* Sources */,
+				8702EC381B51CFDE003B94EA /* Frameworks */,
+				8702EC391B51CFDE003B94EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flaire;
+			productName = Flaire;
+			productReference = 8702EC3B1B51CFDE003B94EA /* Flaire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8702EC561B51CFDE003B94EA /* FlaireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8702EC641B51CFDE003B94EA /* Build configuration list for PBXNativeTarget "FlaireTests" */;
+			buildPhases = (
+				8702EC531B51CFDE003B94EA /* Sources */,
+				8702EC541B51CFDE003B94EA /* Frameworks */,
+				8702EC551B51CFDE003B94EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8702EC591B51CFDE003B94EA /* PBXTargetDependency */,
+			);
+			name = FlaireTests;
+			productName = FlaireTests;
+			productReference = 8702EC571B51CFDE003B94EA /* FlaireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8702EC331B51CFDE003B94EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Zuhayeer Musa";
+				TargetAttributes = {
+					8702EC3A1B51CFDE003B94EA = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					8702EC561B51CFDE003B94EA = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 8702EC3A1B51CFDE003B94EA;
+					};
+				};
+			};
+			buildConfigurationList = 8702EC361B51CFDE003B94EA /* Build configuration list for PBXProject "Flaire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8702EC321B51CFDE003B94EA;
+			productRefGroup = 8702EC3C1B51CFDE003B94EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8702EC3A1B51CFDE003B94EA /* Flaire */,
+				8702EC561B51CFDE003B94EA /* FlaireTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8702EC391B51CFDE003B94EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8702EC4D1B51CFDE003B94EA /* Main.storyboard in Resources */,
+				8702EC521B51CFDE003B94EA /* LaunchScreen.xib in Resources */,
+				8702EC4F1B51CFDE003B94EA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8702EC551B51CFDE003B94EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8702EC371B51CFDE003B94EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8702EC441B51CFDE003B94EA /* AppDelegate.m in Sources */,
+				8702EC471B51CFDE003B94EA /* Flaire.xcdatamodeld in Sources */,
+				8702EC4A1B51CFDE003B94EA /* ViewController.m in Sources */,
+				8702EC411B51CFDE003B94EA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8702EC531B51CFDE003B94EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8702EC5E1B51CFDE003B94EA /* FlaireTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8702EC591B51CFDE003B94EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8702EC3A1B51CFDE003B94EA /* Flaire */;
+			targetProxy = 8702EC581B51CFDE003B94EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8702EC4B1B51CFDE003B94EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8702EC4C1B51CFDE003B94EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8702EC501B51CFDE003B94EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8702EC511B51CFDE003B94EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8702EC5F1B51CFDE003B94EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8702EC601B51CFDE003B94EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8702EC621B51CFDE003B94EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Flaire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8702EC631B51CFDE003B94EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Flaire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8702EC651B51CFDE003B94EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlaireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaire.app/Flaire";
+			};
+			name = Debug;
+		};
+		8702EC661B51CFDE003B94EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FlaireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaire.app/Flaire";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8702EC361B51CFDE003B94EA /* Build configuration list for PBXProject "Flaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8702EC5F1B51CFDE003B94EA /* Debug */,
+				8702EC601B51CFDE003B94EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8702EC611B51CFDE003B94EA /* Build configuration list for PBXNativeTarget "Flaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8702EC621B51CFDE003B94EA /* Debug */,
+				8702EC631B51CFDE003B94EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8702EC641B51CFDE003B94EA /* Build configuration list for PBXNativeTarget "FlaireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8702EC651B51CFDE003B94EA /* Debug */,
+				8702EC661B51CFDE003B94EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8702EC451B51CFDE003B94EA /* Flaire.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8702EC461B51CFDE003B94EA /* Flaire.xcdatamodel */,
+			);
+			currentVersion = 8702EC461B51CFDE003B94EA /* Flaire.xcdatamodel */;
+			path = Flaire.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8702EC331B51CFDE003B94EA /* Project object */;
+}
